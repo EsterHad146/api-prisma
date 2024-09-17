@@ -19,7 +19,6 @@ model User {
   nome  String?
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
-  userId Int
   produtos Produto[]
   fornecedores Fornecedor[]
 }
