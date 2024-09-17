@@ -3,6 +3,7 @@ npx prisma migrate dev --name init //gerar o banco de dados e atualização
 npx prisma studio //abre um localhost para visualizar o banco de dados 
 nest g service prisma // criar a API do Prisma Client para consultas de banco de dados dentro de um serviço.
 
+****MODIFICAR****
 prisma.service.ts
 /*import { Injectable, OnModuleInit } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
