@@ -1,1 +1,3 @@
 npx nest g res Users //para gerar arquivos "CRUD" API REST
+npx prisma migrate dev --name init //gerar o banco de dados e atualização
+npx prisma studio //abre um localhost para visualizar o banco de dados 
