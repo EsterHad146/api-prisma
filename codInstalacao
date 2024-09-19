@@ -27,3 +27,4 @@ import { PrismaService } from 'src/prisma/prisma.service';
 })
 export class UsersModule {}*/
 
+https://docs.nestjs.com/recipes/prisma#use-prisma-client-in-your-nestjs-services
