@@ -32,3 +32,4 @@ export class UsersModule {}*/
 //Sites Referências:
 https://www.prisma.io/docs/orm/prisma-schema/data-model/relations
 https://docs.nestjs.com/recipes/prisma#use-prisma-client-in-your-nestjs-services
+https://docs.nestjs.com/security/authentication
