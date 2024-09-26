@@ -7,8 +7,8 @@ import { UserEntity } from './entities/user.entity';
 @Injectable()
 export class UsersService {
   constructor(private readonly prisma :PrismaService){}
-  async create(createUserDto: CreateUserDto) :Promise<UserEntity> {
-    return this.prisma.user.create({data:createUserDto});
+  async create(CreateUserDto: CreateUserDto) :Promise<UserEntity> {
+    return this.prisma.user.create({data:CreateUserDto});
   }
 
   async findAll() :Promise<UserEntity[]> {
@@ -17,6 +17,10 @@ export class UsersService {
 
   async findOne(id: number) :Promise<UserEntity> {
     return this.prisma.user.findUnique({where:{id}});
+  }
+
+  async findEmailOne(email: string) :Promise<UserEntity> {
+    return this.prisma.user.findUnique({where:{email}});
   }
 
   async update(id: number, updateUserDto: UpdateUserDto) :Promise<UserEntity> {
